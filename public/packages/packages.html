@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../global.css">
+</head>
+<body>
+
+<h1>Packages</h1>
+
+
+<h2 id="express">Express</h2>
+<a href="https://www.npmjs.com/package/express">Link</a>
+<p>Express er et webframework der hjælper med at organisere MVC-arkitektur på serverside. Det er et af de mest poplære frameworks til node.js. Express giver os mulighed for at håndtere forskellige HTTP requests relativt nemt. Express indeholder funktionaliteter der kan håndtere HTTP requests som fx GET, POST, PUT, PATCH og DELETE</p></p>
+
+
+
+<p>Fx kan man med express hurtigt lave en applikation der kan håndtere et get request på en specific url:</p>
+<p>Det første vi skal gøre er at importere express. Denne syntax gælder hver gang man skal importere en pakke til node:</p>
+<code>const express = require("express")</code>
+<p>Herefter kan vi oprette en variable som vi kalder app, som indeholder alle funktioner fra express:</p>
+<code>const app = express()</code>
+<p>Laver et endpoint på "/" som håndtere et get request fra en client og starter serveren på port 8081:</p>
+<code>app.get("/" , (req, res) => {
+    return res.send("Hello World!")
+})
+
+</code>
+<code>app.listen(8081, (error) => {
+    if (error) {
+        console.log("Error starting the server")
+    }
+    console.log("Server started on port", 8081)
+})</code>
+<p>get metoden tager imod en callback function som har 2 parametre. Pga af konventioner kalder man dem altid for req og res</p>
+<p>res repræsentere det response som applikation sender når den får et HTTP request og req indeholder de informationer der bliver sendt som query string, parametre, body osv.</p>
+<p>Med express kan man nemt tage brug af middleware ved hjælp af <code>.use</code> Fx kan vi bruge <code>express.static</code> som er indbygget i express. Vi kan ved hjælp af dette gøre en mappe public så de er frit tilgængelige. Dette er vigitgt hvis man tager brug af external css documenter, da man ellers ville få en 404 fejl</p>
+
+<h2 id="nodemon">Nodemon</h2>
+<a href="https://www.npmjs.com/package/nodemon">Link</a>
+<p>Nodemon er et udviklings værktøj der genstarter en applikationer hver gang der er ændringer i koden. I stedet for at bruge node til at starte applikationen bruger man i stedet nodemon.</p>
+
+<h2 id="budo">Budo</h2>
+<a href="https://www.npmjs.com/package/budo">link</a>
+<p>Budo er et udviklings værktøj som gør det muligt at live update html indhold i browseren uden at opdatere og uden noget backend kode</p>
+
+
+</body>
+</html>

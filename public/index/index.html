@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../index/index.css">
+
+</head>
+<body>
+
+    <div class="sidenav">
+        <img class="logo" src="../pictures/Node.js_logo.png">
+        <h1>Topics</h1>
+
+        <div id="javascript" class="mainmenu">
+            <button class="subbutton">≡</button>
+            <a onclick="changeContentFunction('/javascript')">JavaScript</a>
+            <div id="sub" class="submenu">
+                <a href="#functions" ">functions</a>
+                <a href="#arrowfunctions">Arrow functions</a>
+                <a href="#callbackfunctions">Callback functions</a>
+                <a href="#delcaringvariables">Delcaring Variables</a>
+                <a href="#array">Array</a>
+                <a href="#objects">Objects</a>
+            </div>
+        </div>
+
+
+        <div id="jquery" class="mainmenu">
+            <button class="subbutton">≡</button>
+            <a onclick="changeContentFunction('/jquery')">jQuery</a>
+            <div id="sub" class="submenu">
+                <a href="#howto">Howto</a>
+                <a href="#jqueryselectors">jQuery Selectors</a>
+                <a href="#jqueryevents">jQuery Events</a>
+                <a href="#jquerydommanipulation">Dom manipulation</a>
+                <a href="#ajax">Ajax</a>
+                <a href="#anvendelse">Andevelse</a>
+            </div>
+        </div>
+
+        <div id="nodejs" class="mainmenu">
+            <button class="subbutton">≡</button>
+            <a onclick="changeContentFunction('/nodejs')">Node.JS</a>
+            <div id="sub" class="submenu">
+                <a href="#about">About</a>
+                <a href="#npm">Npm</a>
+                <a href="#restapi">REST API</a>
+                <a href="#howto">Howto</a>
+            </div>
+        </div>
+
+        <div id="packages" class="mainmenu">
+            <button class="subbutton">≡</button>
+            <a onclick="changeContentFunction('/packages')">Packages</a>
+            <div id="sub" class="submenu">
+                <a href="#express">Express</a>
+                <a href="#nodemon">Nodemon</a>
+                <a href="#budo">Budo</a>
+            </div>
+        </div>
+
+        <div id="console commands" class="mainmenu">
+            <a onclick="changeContentFunction('/consolecmd')">Console commands</a>
+            <div id="sub" class="submenu">
+            </div>
+        </div>
+    </div>
+
+    <div id="div1" class="center">
+
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="index/index.js"></script>
+</body>
+</html>

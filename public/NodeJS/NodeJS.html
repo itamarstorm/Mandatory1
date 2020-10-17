@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../global.css">
+</head>
+<body>
+
+<h1>NodeJS</h1>
+
+<h2 id="about">About</h2>
+<p>Node.js er et opensource Javascript runtime miljø som bruges til at udvikle wbeapplikationer</p>
+<p>Node.js gør det muligt for webudvikler at bruge JavaScript i backenden og skabe dynamiske hjemmesider før de bliver sendt til en brugers browser</p>
+<p>Før hen blev JavaScript udført clientside af brugerens browser, men ved hjælp af node.js kan hjemmesider nu udvikles med et enkelt sprog både til backend og frontend.</p>
+<p></p>
+
+<h2 id="npm">npm</h2>
+<p>Node Package Manager er et værktøj som kan bruges til at håndtere de pakker vi bruger til udviklingen af node.js applikationer og generel styring af node projekter</p>
+<p>Ved hjælp af npm kan vi nemt installere, samt afinstallere 3 third party pakker til vores node.js projekter. En af de pakker vi har brugt mest undervisningen er <p class="hyperlink" onclick="changeContentFunction('/packages')">express</p> som tilbyder metoder der gør det nemmere at opsætte en webservice.</p>
+<p class="hyperlink"  onclick="changeContentFunction('/consolecmd')">npm console commands</p>
+
+<h2 id="restapi">REST API</h2>
+<p>Det er hurtigt og nemt at opsætte en REST API med node.js, især pga af de mange pakker man kan impotere</p>
+
+<h2 id="howto">Howto</h2>
+<p>For at bruge node skal programet først installeres. Det kan gøres via dette link. (<a href="https://nodejs.org/en/">link</a>)</p>
+<p>Når vi opretter et nyt projekt laver vi en ny fil der skal hedde app.js. I denne fil kommer al backend til at være.</p>
+<p>Det næste er at lave en package.json fil (Her kan npm init også bruges). Denne json fil indeholder alt metadata omkring vores projekt(name, version, despription osv) samt hvilken dependencies vores projekt bruger.</p>
+<p>Det er primært 2 forskellige metoder at tilføje nye pakker til vores projekt. Det kan gøres ved at tilføje pakkens navn samt version til "dependencies" i package.json og herefter bruge npm install.</p>
+<h3>Ex:</h3>
+<code>{
+    "description": "Mandatory assignment for elective node.js",
+    "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+    }
+}
+</code>
+<p>Det kan dog også gøres nemmere ved at bruge npm install &lt;package&gt; som automatisk tilføjer pakken til package.json</p>
+
+
+</body>
+</html>

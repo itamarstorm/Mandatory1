@@ -1,0 +1,81 @@
+body {
+    font-family: "Lato", sans-serif;
+
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.center {
+    margin: auto;
+    width: 60%;
+    padding: 70px 0;
+}
+
+.sidenav {
+    height: 100%;
+    width: 180px;
+    position: fixed; left: 100px;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    padding-top: 10px;
+    border-right: 10px solid grey;
+
+}
+
+.sidenav a {
+    padding: 6px 0px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #111111;
+    display: block;
+}
+
+.sidenav h1 {
+    padding: 6px 8px 6px 16px;
+    font-size: 40px;
+    color: black;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+    background-color: gray;
+    cursor: pointer;
+}
+
+.sidenav div {
+    border-bottom: 5px black;
+}
+
+
+
+.submenu a {
+
+    font-size: 16px;
+}
+
+.submenu {
+    display: none;
+}
+
+.mainmenu a{
+
+}
+
+.subbutton {
+    background-color: transparent;
+    border: none;
+    float: right;
+    padding-top: 15px;
+    padding-right: 10px;
+    cursor: pointer;
+
+}

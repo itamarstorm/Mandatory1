@@ -1,0 +1,52 @@
+body {
+    font-family: "Lato", sans-serif;
+
+}
+.center {
+    margin: auto;
+    width: 60%;
+    padding: 70px 0;
+}
+
+table, th ,td {
+    border-collapse: collapse;
+
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+
+
+.pic {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+code {
+    font-size: 20px;
+    display: block;
+    white-space: pre-wrap;
+    display: inline;
+}
+
+h3 {
+    color: red;
+}
+
+.hyperlink {
+    cursor: pointer;
+    color: blue;
+    font-size: 1em;
+    display: inline;
+
+
+}
+

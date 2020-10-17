@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../global.css">
+</head>
+<body>
+
+<h1>JavaScript</h1>
+<p>JavaScript er mest anvedt til webudvikling. JavaScript bliver oftes udført clientside af en browser som fx firefox eller chrome. Pga navnet skulle man tro JavaScript var skrevet i java men faktisk er JavaScript en standard der kan implemteres med næsten alle programeringssprog. Chromes JavaScript egnine V8 som nodeJS er bygget op omkring er fx skrevet i C++</p>
+
+<h2 id="functions">Functions</h2>
+<p>Functions i javaScript er blokke af kode som udfører en specific opgave og bliver udført når den bliver kaldt</p>
+<h3>Syntax</h3>
+<code>function name(parameter1, parameter2, parameter3) {
+    // code to be executed
+}</code>
+
+<h2 id="arrowfunctions">Arrow Functions</h2>
+<p>Arrow functions fungere ligesom en normal function men har en kortere syntax</p>
+<h3>Syntax</h3>
+<code>const x = (x, y) => x + y</code>
+
+<h2 id="callbackfunctions">Callback Functions</h2>
+<p>I javaScript bliver funtioner udført i den rækkefølge de bliver kaldt. Hvis man vil have bedre kontrol over hvornår functions bliver kaldt kan man bruge callback functioner:</p>
+<code>function myDisplayer(some) {
+    document.getElementById("demo").innerHTML = some;
+}
+
+function myCalculator(num1, num2, callback) {
+    let sum = num1 + num2;
+    callback(sum);
+}
+
+myCalculator(5, 5, myDisplayer);</code>
+<p>En callback function er altså en function der bliver passed som en argument og kaldt af en anden function</p>
+
+<h2 id="delcaringvariables">Declaring variables</h2>
+<h3>Syntax</h3>
+<code>const a = 100
+let a = 200</code>
+
+
+<p>For at declare variabler i javaScript kan man bruge entet let eller const. Du kan ikke ændre på en const reference men man kan godt ændre på værdierne i en const.</p>
+<h3>Ex:</h3>
+<code>// You can create a const object:
+    const car = {type:"Fiat", model:"500", color:"white"};
+
+// You can change a property:
+    car.color = "red";
+
+// You can add a property:
+    car.owner = "Johnson"; </code>
+<h3>Men ikke:</h3>
+<code>const car = {type:"Fiat", model:"500", color:"white"};
+car = {type:"Volvo", model:"EX60", color:"red"};    // ERROR </code>
+
+<code></code>
+
+<h2 id="array">Array</h2>
+<h3>Syntax</h3>
+<code>let array_name = [item1, item2, ...];</code>
+
+<h2 id="objects">Objects</h2>
+<h3>Syntax</h3>
+<code>let car = {type:"Fiat", model:"500", color:"white"};</code>
+<p>Object er variable der indeholder flere værdier. Værdierne er angivet i name:value pairs. Der er to måder at tilgå et objects værdier:</p>
+
+<code>objectName.propertyName
+
+objectName["propertyName"]
+
+</code>
+
+
+</body>
+</html>
